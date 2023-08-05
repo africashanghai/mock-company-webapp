@@ -35,9 +35,9 @@ project(":client-app") {
 
 // Here we have a task that depends on the client UI build and then copies the build output into src/main/webapp so that Java app will serve it
 task copyClientApp(type: Copy) {
-    dependsOn ":client-app:yarn_build"
-    from project(":client-app").buildDir
-    into "src/main/webapp"
+//    dependsOn ":client-app:yarn_build"
+//    from project(":client-app").buildDir
+//    into "src/main/webapp"
 }
 
 // Ensure copying the client webapp happens before building the jar (assemble) or running the app (bootRun)
